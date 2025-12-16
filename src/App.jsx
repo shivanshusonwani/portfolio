@@ -31,13 +31,21 @@ function App() {
 			code: "https://github.com/shivanshusonwani/CodeSense.AI",
 		},
 		{
-			imgSrc: "/pinboard.png",
-			title: "PinBoard",
-			desc: "A clean and minimal Notes App inspired by Google Keep. Users can create, save, and manage notes with an expanding input UI. Notes are stored locally using localStorage, ensuring data persists even after refreshing the page.",
-			tech: ["React", "Tailwind", "JavaScript", "LocalStorage"],
-			live: "https://pinboard-3hgl.onrender.com",
-			code: "https://github.com/shivanshusonwani/PinBoard",
+			imgSrc: "/todo.png",
+			title: "To Do",
+			desc: "A lightweight Microsoft To Do–inspired task manager with add, delete, complete, and important task features, secured with JWT-based user authentication.",
+			tech: ["React", "Tailwind", "JavaScript", "Express","MongoDB"],
+			live: "https://clone-ms-todo.netlify.app/",
+			code: "https://github.com/shivanshusonwani/todo",
 		},
+		// {
+		// 	imgSrc: "/pinboard.png",
+		// 	title: "PinBoard",
+		// 	desc: "A clean and minimal Notes App inspired by Google Keep. Users can create, save, and manage notes with an expanding input UI. Notes are stored locally using localStorage, ensuring data persists even after refreshing the page.",
+		// 	tech: ["React", "Tailwind", "JavaScript", "LocalStorage"],
+		// 	live: "https://pinboard-3hgl.onrender.com",
+		// 	code: "https://github.com/shivanshusonwani/PinBoard",
+		// },
 	];
 
 	return (
