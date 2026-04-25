@@ -12,6 +12,7 @@ import {
 } from "react-icons/fi";
 import { FaAngleDown } from "react-icons/fa";
 import { useState } from "react";
+import ContactUs from "./ContactUs";
 
 function App() {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -23,29 +24,27 @@ function App() {
 
 	const projects = [
 		{
-			imgSrc: "/codesense.png",
+			title: "Messenger (Real-Time Chat App)",
+			desc: "A full-stack messaging platform designed for high performance and secure communication. Built with a focus on simplicity and modularity, it leverages modern web technologies to provide a seamless user experience.",
+			tech: ["React", "Tailwind", "Node.js", "MongoDB", "JWT", "Socket.io"],
+			live: "https://messenger-beta-nine.vercel.app/",
+			code: "https://github.com/shivanshusonwani/messenger",
+		},
+		{
 			title: "CodeSense AI",
 			desc: "A modern MERN Code Review app featuring an in-browser code editor, rich Markdown output, Highlight.js themes, and Gemini AI integration for automated, high-quality code reviews.",
 			tech: ["React", "Node.js", "Express", "Google GenAI", "Tailwind"],
-			live: "https://codesense-ai-p75q.onrender.com",
+			live: "https://code-sense-ai-alpha.vercel.app/",
 			code: "https://github.com/shivanshusonwani/CodeSense.AI",
 		},
+
 		{
-			imgSrc: "/todo.png",
-			title: "To Do",
-			desc: "A lightweight Microsoft To Do–inspired task manager with add, delete, complete, and important task features, secured with JWT-based user authentication.",
-			tech: ["React", "Tailwind", "JavaScript", "Express","MongoDB"],
-			live: "https://clone-ms-todo.netlify.app/",
-			code: "https://github.com/shivanshusonwani/todo",
+			title: "CodeCanvas",
+			desc: "A web-based code editor that provides an interactive environment for developers to write, test, and preview HTML, CSS, and JavaScript code in real-time.",
+			tech: ["React", "Tailwind", "Context API", "Express", "MongoDB"],
+			live: "https://code-canvas-six.vercel.app/",
+			code: "https://github.com/shivanshusonwani/CodeCanvas",
 		},
-		// {
-		// 	imgSrc: "/pinboard.png",
-		// 	title: "PinBoard",
-		// 	desc: "A clean and minimal Notes App inspired by Google Keep. Users can create, save, and manage notes with an expanding input UI. Notes are stored locally using localStorage, ensuring data persists even after refreshing the page.",
-		// 	tech: ["React", "Tailwind", "JavaScript", "LocalStorage"],
-		// 	live: "https://pinboard-3hgl.onrender.com",
-		// 	code: "https://github.com/shivanshusonwani/PinBoard",
-		// },
 	];
 
 	return (
@@ -192,13 +191,8 @@ function App() {
 					{projects.map((project, i) => (
 						<div
 							key={i}
-							className='p-6 rounded-2xl bg-linear-to-tl from-yellow-50 to-yellow-100/80 shadow-lg hover:scale-105 transition-transform duration-300 max-w-90 flex flex-col justify-between'>
+							className='w-80 p-6 rounded-2xl bg-linear-to-tl from-yellow-50 to-yellow-100/80 shadow-lg hover:scale-105 transition-transform duration-300 max-w-90 flex flex-col justify-between'>
 							<div>
-								<img
-									src={`${import.meta.env.BASE_URL}/${project.imgSrc}`}
-									alt='project screenshot'
-									className='object-cover rounded'
-								/>
 								<h3 className='text-2xl font-bold py-3'>{project.title}</h3>
 								<p className='text-zinc-500 font-semibold tracking-wide mb-4'>
 									{project.desc}
@@ -238,18 +232,19 @@ function App() {
 			{/* Contact Section */}
 			<section
 				id='contact'
-				className='py-25 px-8 max-w-7xl mx-auto md:px-12'>
-				<div className='max-w-4xl mx-auto text-center'>
-					<h2 className='text-4xl font-bold mb-10'>Let's Work Together</h2>
+				className='py-15 px-8 mt-8 max-w-7xl mx-auto md:px-12 bg-yellow-100/20'>
+				<div className='max-w-4xl mx-auto'>
+					{/* <h2 className='text-4xl font-bold mb-10'>Let's Work Together</h2>
 					<p className='text-xl mb-12'>
 						Have a project in mind? Let's bring it to life.
-					</p>
-					<a
+					</p> */}
+					{/* <a
 						href='mailto:shivanshusonwani.dev@gmail.com'
 						className='inline-flex items-center gap-3 px-10 py-5 font-semibold rounded-full bg-linear-to-b from-yellow-200 to-yellow-300 cursor-pointer active:scale-95 transition-transform'>
 						<FiMail className='w-6 h-6' />
 						Get In Touch
-					</a>
+					</a> */}
+					<ContactUs />
 				</div>
 			</section>
 
