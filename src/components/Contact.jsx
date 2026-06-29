@@ -39,52 +39,51 @@ function Contact() {
 	};
 
 	return (
-		<section
-			id='contact'
-			className='py-15 px-8 mt-8 max-w-7xl mx-auto md:px-12 bg-yellow-100/20'
-		>
-			<div className='max-w-4xl mx-auto'>
-				<div className='max-w-md mx-auto my-8 p-6 rounded-lg shadow-lg'>
-					<h2 className='text-2xl font-bold mb-4'>Contact Me</h2>
-
-					<form ref={form} onSubmit={sendEmail} className='space-y-4'>
+		<section id='contact' className='py-20 px-8 md:px-12 bg-white'>
+			<div className='max-w-4xl mx-auto text-center'>
+				<h2 className='text-center mb-1 sm:text-4xl'>Send a Message</h2>
+				<p className='text-sm text-neutral-500'>
+					Fill out the form and I'll respond as soon as possible.
+				</p>
+				<div className='max-w-2xl mx-auto my-8 p-8 rounded-lg shadow-lg shadow-[#14b8a6]/50 border border-[#14b8a6] text-left'>
+					<form ref={form} onSubmit={sendEmail} className='space-y-6'>
 						<div>
-							<label className='block text-sm font-medium'>
+							<label className='block font-medium text-[#14b8a6] pb-[0.5]'>
 								Name
 							</label>
 							<input
 								type='text'
 								name='name'
 								required
-								className='w-full p-2 border rounded'
+								className='w-full p-2 border border-[#14b8a6] focus:outline-none focus:ring-2 focus:ring-[#14b8a6]  rounded'
 							/>
 						</div>
 						<div>
-							<label className='block text-sm font-medium'>
+							<label className='block font-medium text-[#14b8a6] pb-[0.5]'>
 								Your Email
 							</label>
 							<input
 								type='email'
 								name='email'
 								required
-								className='w-full p-2 border rounded'
+								className='w-full p-2 border border-[#14b8a6] focus:outline-none focus:ring-2 focus:ring-[#14b8a6]  rounded'
 							/>
 						</div>
 						<div>
-							<label className='block text-sm font-medium'>
+							<label className='block font-medium text-[#14b8a6] pb-[0.5]'>
 								Message
 							</label>
 							<textarea
 								name='message'
 								required
-								className='w-full p-2 border rounded h-32'
+								className='w-full p-2 border border-[#14b8a6] focus:outline-none focus:ring-2 focus:ring-[#14b8a6]  rounded h-32'
 							></textarea>
 						</div>
 
 						<button
 							type='submit'
 							disabled={status === 'sending'}
-							className='w-full bg-zinc-800 text-white py-2 rounded hover:bg-zinc-700 disabled:bg-zinc-300 cursor-pointer'
+							className='w-full bg-[#14b8a6] text-white py-2 rounded hover:bg-[#14b8a6]/80 disabled:bg-zinc-300 cursor-pointer'
 						>
 							{status === 'sending'
 								? 'Sending...'

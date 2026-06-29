@@ -6,14 +6,14 @@ function FeaturedProjects() {
 	return (
 		<section
 			id='projects'
-			className='pt-20 px-8 max-w-7xl mx-auto md:px-12'
+			className='py-20 px-8  md:px-12 bg-linear-to-tr from-[#14b8a6] to-white'
 		>
 			<h2 className='text-center mb-10 sm:text-4xl'>Featured Projects</h2>
-			<div className='flex flex-wrap justify-center gap-8'>
+			<div className='flex flex-col gap-8 justify-center max-w-5xl mx-auto'>
 				{Projects.map((project, i) => (
 					<div
 						key={i}
-						className='w-80 p-6 rounded-2xl bg-linear-to-tl from-yellow-50 to-yellow-100/80 shadow-lg hover:scale-105 transition-transform duration-300 max-w-90 flex flex-col justify-between'
+						className=' p-6 rounded-2xl bg-white shadow-lg hover:scale-[1.02] transition-transform duration-300 flex flex-col justify-between'
 					>
 						<div>
 							<h3 className='text-2xl font-bold py-3'>
@@ -39,7 +39,7 @@ function FeaturedProjects() {
 								<a
 									href={project.live}
 									target='_blank'
-									className='flex   text-yellow-500  items-center  gap-2 cursor-pointer hover:underline underline-offset-4'
+									className='flex   text-[#14b8a6]  items-center  gap-2 cursor-pointer hover:underline underline-offset-4'
 								>
 									<FiExternalLink className='w-4 h-4' /> Live
 									Demo

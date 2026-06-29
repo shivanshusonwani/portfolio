@@ -2,8 +2,8 @@ import React from 'react';
 
 function Footer() {
 	return (
-		<footer className='py-8 border-t border-zinc-300 text-center '>
-			<p>Shivanshu Sonwani • Software Developer • 2025</p>
+		<footer className='py-8 text-center bg-linear-to-t from-[#14b8a6] to-white'>
+			<p>Shivanshu Sonwani • Software Developer • 2026</p>
 		</footer>
 	);
 }

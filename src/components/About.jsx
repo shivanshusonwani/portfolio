@@ -5,7 +5,7 @@ function About() {
 	return (
 		<section
 			id='about'
-			className='pt-20 px-8 mt-0 max-w-7xl mx-auto md:px-12'
+			className='py-20 px-8 mt-0 max-w-7xl mx-auto md:px-12'
 		>
 			<h2 className='text-center mb-10 sm:text-4xl'>About Me</h2>
 			<div className='grid md:grid-cols-2 gap-8 items-center'>
@@ -35,7 +35,7 @@ function About() {
 							key={i}
 							className='flex flex-col justify-center items-center gap-4 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow'
 						>
-							<div className='text-3xl text-yellow-500'>
+							<div className='text-3xl text-[#14b8a6]'>
 								{skill.icon}
 							</div>
 							<p className='text-lg font-semibold'>
